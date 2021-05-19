@@ -1,5 +1,5 @@
 {% set name = "daops" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/daops-{{ version }}.tar.gz
-  sha256: 41e7586beb964002eb38c5673a81c6577dd09922b70b2ee358627b21ef621ae1
+  sha256: 3fef1ebec04470db24f445be0d5ad7f47980858252c8f074499de89bf1fa27a4
 
 build:
   number: 0
