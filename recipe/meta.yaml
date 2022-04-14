@@ -22,9 +22,10 @@ requirements:
     - pytest-runner
   run:
     - python >=3.7
-    - clisops >=0.7.0
+    - clisops >=0.9.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
+    - cftime >=1.4.1
     - netcdf4 >=1.4
     - numpy >=1.16
     - roocs-utils >=0.5.0
@@ -32,6 +33,7 @@ requirements:
     - intake
     - fsspec
     - aiohttp
+    - loguru >=0.5.3
 
 
 test:
