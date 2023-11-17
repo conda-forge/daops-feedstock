@@ -21,15 +21,18 @@ requirements:
     - pip
     - pytest-runner
   run:
-    - python >=3.7
-    - clisops >=0.9.1
+    - python >=3.9
+    - clisops >=0.10.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
     - cftime >=1.4.1
     - netcdf4 >=1.4
+    - numba
     - numpy >=1.16
     - roocs-utils >=0.6.2
-    - xarray >=0.15
+    - sparse >=0.8.0
+    - xarray >=0.21
+    - xesmf >=0.6.3
     - intake
     - fsspec
     - aiohttp
