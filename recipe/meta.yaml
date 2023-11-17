@@ -1,5 +1,5 @@
 {% set name = "daops" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/daops-{{ version }}.tar.gz
-  sha256: 17d41d44455bbfe089bb0a85b4b1cbc21c14c1a48bb957e07ad5559bad2ce165
+  sha256: e31e378ffcda566190b7c166bbb933de76b82f53318945c0cd03abd70a7966a5
 
 build:
   number: 0
@@ -21,15 +21,18 @@ requirements:
     - pip
     - pytest-runner
   run:
-    - python >=3.7
-    - clisops >=0.9.1
+    - python >=3.9
+    - clisops >=0.10.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
     - cftime >=1.4.1
     - netcdf4 >=1.4
+    - numba
     - numpy >=1.16
     - roocs-utils >=0.6.2
-    - xarray >=0.15
+    - sparse >=0.8.0
+    - xarray >=0.21
+    - xesmf >=0.6.3
     - intake
     - fsspec
     - aiohttp
