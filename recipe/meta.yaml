@@ -22,7 +22,7 @@ requirements:
     - pytest-runner
   run:
     - python >=3.9
-    - clisops >=0.10.0
+    - clisops >=0.12.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
     - cftime >=1.4.1
@@ -30,9 +30,10 @@ requirements:
     - numba
     - numpy >=1.16
     - roocs-utils >=0.6.2
+    - roocs-grids >=0.1.2
     - sparse >=0.8.0
-    - xarray >=0.21
-    - xesmf >=0.6.3
+    - xarray >=0.21,<2023.3.0 # https://github.com/pydata/xarray/issues/7794
+    - xesmf >=0.8.2
     - intake
     - fsspec
     - aiohttp
