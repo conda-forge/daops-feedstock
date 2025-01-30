@@ -22,22 +22,24 @@ requirements:
     - pytest-runner
   run:
     - python >={{ python_min }}
-    - clisops >=0.12.1
+    - clisops >=0.12.1,<0.15.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
     - cftime >=1.4.1
     - netcdf4 >=1.4
     - numba
     - numpy >=1.16
-    - roocs-utils >=0.6.2
+    - roocs-utils >=0.6.4
     - roocs-grids >=0.1.2
     - sparse >=0.8.0
     - xarray >=0.21,<2023.3.0 # https://github.com/pydata/xarray/issues/7794
     - xesmf >=0.8.2
     - intake >=0.7.0,<2.0
+    - loguru >=0.5.3
     - fsspec
     - aiohttp
-    - loguru >=0.5.3
+    - zarr ==2.13.3
+    - zstandard
 
 
 test:
