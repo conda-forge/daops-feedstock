@@ -1,5 +1,5 @@
 {% set name = "daops" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/daops-{{ version }}.tar.gz
-  sha256: 0f3be08df5a2cc701f645269cb0aedb6ab2144a77820dbdc9532ca1d4e02e43c
+  sha256: 3bbee5d081f3abf8682187aa9287f25e9963024ed7ec10030d4e644b5ca1f139
 
 build:
   number: 0
@@ -18,9 +18,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - flit-core >=3.9,<4.0
     - pip
-    - setuptools
-    - pytest-runner
   run:
     - python >={{ python_min }}
     - clisops >=0.12.1,<0.15.0
