@@ -1,5 +1,5 @@
 {% set name = "daops" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/daops-{{ version }}.tar.gz
-  sha256: 3bbee5d081f3abf8682187aa9287f25e9963024ed7ec10030d4e644b5ca1f139
+  sha256: e4393e61d5821bcc8e75eae6cb8a2747a91ee727928e62405e0b9076cfc9eef9
 
 build:
   number: 0
@@ -22,23 +22,23 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - clisops >=0.12.1,<0.15.0
+    - clisops >=0.15.0
     - dask >=2.6.0
     - elasticsearch >=7.9.1
     - cftime >=1.4.1
     - netcdf4 >=1.4
     - numba
-    - numpy >=1.16
-    - roocs-utils >=0.6.4
+    - numpy >=1.23.0,<2.0.0
     - roocs-grids >=0.1.2
     - sparse >=0.8.0
     - xarray >=0.21,<2023.3.0 # https://github.com/pydata/xarray/issues/7794
     - xesmf >=0.8.2
     - intake >=0.7.0,<2.0
+    - pandas <2.0
     - loguru >=0.5.3
     - fsspec
     - aiohttp
-    - zarr ==2.13.3
+    - zarr >=2.13.3
     - zstandard
 
 
