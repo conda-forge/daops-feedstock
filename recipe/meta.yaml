@@ -1,6 +1,6 @@
 {% set name = "daops" %}
-{% set version = "0.15.0" %}
-{% set python_min = "3.10" %}
+{% set version = "0.16.0" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/daops-{{ version }}.tar.gz
-  sha256: 40771622ea284ffea7cf7d4dfc8a0988a71c2f07ad06a7a244ff4402943c77df
+  sha256: 3ff7401b1f144e806930f55db06527aee45d9af49bee2689c00a0bc24e016ea7
 
 build:
   number: 0
@@ -23,17 +23,18 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - clisops >=0.16.1
-    - dask >=2.6.0
-    - elasticsearch >=8.0.1
+    - clisops >=0.17.0
+    - dask >=2024.12.0
+    - elasticsearch >=8.0.1,<9.0
     - cftime >=1.4.1
     - netcdf4 >=1.4
     - numba
-    - numpy >=1.24.0,<2.0.0
+    - numpy >=1.26.0,<2.0.0
     - roocs-grids >=0.1.2
     - sparse >=0.8.0
-    - xarray >=2025.1.1,<2025.3.0
-    - xesmf >=0.8.2
+    - xarray >=2025.6.0
+    - h5netcdf >=1.5.0
+    - xesmf >=0.9.2
     - intake >=0.7.0,<2.0
     - pandas >=2.1
     - loguru >=0.5.3
